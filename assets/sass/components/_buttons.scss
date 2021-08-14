@@ -1,5 +1,4 @@
 .button--lg-blue {
-    text-decoration: none;
     color: $white;
     background-color: $lg-blue;
     font-family: $montserrat;
@@ -7,14 +6,15 @@
     border-radius: 0;
     padding: 0.6rem 0.5rem 0.5rem 0.5rem;
     &:hover {
+        text-decoration: none;
         border-color: $lg-blue;
-        color: $lg-blue;
+        color: $white;
     }
 }
 
 .button--lg-blue-check:focus + .button--lg-blue, 
 .button--lg-blue:focus {
-    color: $lg-blue;
+    color: $white;
     border-color: $lg-blue;
     box-shadow: 0 0 0 0.25rem $lg-blue;
 }
@@ -23,7 +23,7 @@
 .button--lg-blue-check:active + .button--lg-blue, 
 .button--lg-blue:active, .button--lg-blue.active, 
 .show > .button--lg-blue.dropdown-toggle {
-    color: $lg-blue;
+    color: $white;
     background-color: $lg-blue;
     border-color: $lg-blue;
 }
@@ -35,27 +35,26 @@
     box-shadow: 0 0 0 0.25rem $lg-blue;
 }
 
-/*.button-secondary {
-    text-decoration: none;
+.button--red {
     color: $white;
-    background-color: $shiny-shamrock;
-    font-family: $roboto;
-    font-weight: $regular;
+    background-color: $red;
+    font-family: $montserrat;
+    font-weight: $light;
     border-radius: 0;
-    border: 1px solid $shiny-shamrock;
+    padding: 0.6rem 0.5rem 0.5rem 0.5rem;
     &:hover {
-        color: $outer-space;
-        background-color: $turquoise-green;
-        border-color: $turquoise-green;
+        text-decoration: none;
+        color: $white;
+        border-color: $red;
     }
 }
 
 .button-secondary-check:focus + .button-secondary, 
 .button-secondary:focus {
-    color: $quick-silver;
-    background-color: $pastel-gray;
-    border-color: $turquoise-green;
-    box-shadow: 0 0 0 0.25rem $turquoise-green;
+    color: $white;
+    background-color: $red;
+    border-color: $red;
+    box-shadow: 0 0 0 0.25rem $red;
 }
 
 .button-secondary-check:checked + .button-secondary, 
@@ -63,9 +62,9 @@
 .button-secondary:active, 
 .button-secondary.active, 
 .show > .button-secondary.dropdown-toggle {
-    color: $outer-space;
-    background-color: $turquoise-green;
-    border-color: $shiny-shamrock;
+    color: $white;
+    background-color: $red;
+    border-color: $red;
 }
 
 .button-secondary-check:checked + .button-secondary:focus, 
@@ -73,5 +72,5 @@
 .button-secondary:active:focus, 
 .button-secondary.active:focus, 
 .show > .button-secondary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.25rem $turquoise-green;
-}*/
+    box-shadow: 0 0 0 0.25rem $red;
+}
