@@ -1,0 +1,77 @@
+.button--lg-blue {
+    text-decoration: none;
+    color: $white;
+    background-color: $lg-blue;
+    font-family: $montserrat;
+    font-weight: $light;
+    border-radius: 0;
+    padding: 0.6rem 0.5rem 0.5rem 0.5rem;
+    &:hover {
+        border-color: $lg-blue;
+        color: $lg-blue;
+    }
+}
+
+.button--lg-blue-check:focus + .button--lg-blue, 
+.button--lg-blue:focus {
+    color: $lg-blue;
+    border-color: $lg-blue;
+    box-shadow: 0 0 0 0.25rem $lg-blue;
+}
+
+.button--lg-blue-check:checked + .button--lg-blue, 
+.button--lg-blue-check:active + .button--lg-blue, 
+.button--lg-blue:active, .button--lg-blue.active, 
+.show > .button--lg-blue.dropdown-toggle {
+    color: $lg-blue;
+    background-color: $lg-blue;
+    border-color: $lg-blue;
+}
+
+.button--lg-blue-check:checked + .button--lg-blue:focus, 
+.button--lg-blue-check:active + .button--lg-blue:focus, 
+.button--lg-blue:active:focus, .button--lg-blue.active:focus, 
+.show > .button--lg-blue.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem $lg-blue;
+}
+
+/*.button-secondary {
+    text-decoration: none;
+    color: $white;
+    background-color: $shiny-shamrock;
+    font-family: $roboto;
+    font-weight: $regular;
+    border-radius: 0;
+    border: 1px solid $shiny-shamrock;
+    &:hover {
+        color: $outer-space;
+        background-color: $turquoise-green;
+        border-color: $turquoise-green;
+    }
+}
+
+.button-secondary-check:focus + .button-secondary, 
+.button-secondary:focus {
+    color: $quick-silver;
+    background-color: $pastel-gray;
+    border-color: $turquoise-green;
+    box-shadow: 0 0 0 0.25rem $turquoise-green;
+}
+
+.button-secondary-check:checked + .button-secondary, 
+.button-secondary-check:active + .button-secondary, 
+.button-secondary:active, 
+.button-secondary.active, 
+.show > .button-secondary.dropdown-toggle {
+    color: $outer-space;
+    background-color: $turquoise-green;
+    border-color: $shiny-shamrock;
+}
+
+.button-secondary-check:checked + .button-secondary:focus, 
+.button-secondary-check:active + .button-secondary:focus, 
+.button-secondary:active:focus, 
+.button-secondary.active:focus, 
+.show > .button-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem $turquoise-green;
+}*/
