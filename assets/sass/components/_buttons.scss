@@ -7,6 +7,7 @@
     padding: 0.6rem 0.5rem 0.5rem 0.5rem;
     &:hover {
         text-decoration: none;
+        background-color: $dk-blue;
         border-color: $lg-blue;
         color: $white;
     }
@@ -15,7 +16,7 @@
 .button--lg-blue-check:focus + .button--lg-blue, 
 .button--lg-blue:focus {
     color: $white;
-    border-color: $lg-blue;
+    border-color: $dk-blue;
     box-shadow: 0 0 0 0.25rem $lg-blue;
 }
 
@@ -24,7 +25,7 @@
 .button--lg-blue:active, .button--lg-blue.active, 
 .show > .button--lg-blue.dropdown-toggle {
     color: $white;
-    background-color: $lg-blue;
+    background-color: $dk-blue;
     border-color: $lg-blue;
 }
 
@@ -44,33 +45,34 @@
     padding: 0.6rem 0.8rem 0.5rem 0.8rem;
     &:hover {
         text-decoration: none;
+        background-color: $dk-red;
         color: $white;
         border-color: $red;
     }
 }
 
-.button-secondary-check:focus + .button-secondary, 
-.button-secondary:focus {
+.button--red-check:focus + .button--red, 
+.button--red:focus {
     color: $white;
     background-color: $red;
-    border-color: $red;
+    border-color: $dk-red;
     box-shadow: 0 0 0 0.25rem $red;
 }
 
-.button-secondary-check:checked + .button-secondary, 
-.button-secondary-check:active + .button-secondary, 
-.button-secondary:active, 
-.button-secondary.active, 
-.show > .button-secondary.dropdown-toggle {
+.button--red-check:checked + .button--red, 
+.button--red-check:active + .button--red, 
+.button--red:active, 
+.button--red.active, 
+.show > .button--red.dropdown-toggle {
     color: $white;
-    background-color: $red;
+    background-color: $dk-red;
     border-color: $red;
 }
 
-.button-secondary-check:checked + .button-secondary:focus, 
-.button-secondary-check:active + .button-secondary:focus, 
-.button-secondary:active:focus, 
-.button-secondary.active:focus, 
-.show > .button-secondary.dropdown-toggle:focus {
+.button--red-check:checked + .button--red:focus, 
+.button--red-check:active + .button--red:focus, 
+.button--red:active:focus, 
+.button--red.active:focus, 
+.show > .button--red.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.25rem $red;
 }

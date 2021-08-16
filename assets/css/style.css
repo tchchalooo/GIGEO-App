@@ -22,6 +22,7 @@ img {
 }
 .button--lg-blue:hover {
   text-decoration: none;
+  background-color: #74C8D3;
   border-color: #92DCE5;
   color: #FFFFFF;
 }
@@ -29,7 +30,7 @@ img {
 .button--lg-blue-check:focus + .button--lg-blue,
 .button--lg-blue:focus {
   color: #FFFFFF;
-  border-color: #92DCE5;
+  border-color: #74C8D3;
   box-shadow: 0 0 0 0.25rem #92DCE5;
 }
 
@@ -38,7 +39,7 @@ img {
 .button--lg-blue:active, .button--lg-blue.active,
 .show > .button--lg-blue.dropdown-toggle {
   color: #FFFFFF;
-  background-color: #92DCE5;
+  background-color: #74C8D3;
   border-color: #92DCE5;
 }
 
@@ -59,34 +60,69 @@ img {
 }
 .button--red:hover {
   text-decoration: none;
+  background-color: #D94946;
   color: #FFFFFF;
   border-color: #EF6461;
 }
 
-.button-secondary-check:focus + .button-secondary,
-.button-secondary:focus {
+.button--red-check:focus + .button--red,
+.button--red:focus {
   color: #FFFFFF;
   background-color: #EF6461;
-  border-color: #EF6461;
+  border-color: #D94946;
   box-shadow: 0 0 0 0.25rem #EF6461;
 }
 
-.button-secondary-check:checked + .button-secondary,
-.button-secondary-check:active + .button-secondary,
-.button-secondary:active,
-.button-secondary.active,
-.show > .button-secondary.dropdown-toggle {
+.button--red-check:checked + .button--red,
+.button--red-check:active + .button--red,
+.button--red:active,
+.button--red.active,
+.show > .button--red.dropdown-toggle {
   color: #FFFFFF;
-  background-color: #EF6461;
+  background-color: #D94946;
   border-color: #EF6461;
 }
 
-.button-secondary-check:checked + .button-secondary:focus,
-.button-secondary-check:active + .button-secondary:focus,
-.button-secondary:active:focus,
-.button-secondary.active:focus,
-.show > .button-secondary.dropdown-toggle:focus {
+.button--red-check:checked + .button--red:focus,
+.button--red-check:active + .button--red:focus,
+.button--red:active:focus,
+.button--red.active:focus,
+.show > .button--red.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem #EF6461;
+}
+
+.card-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12pt;
+  color: #001514;
+}
+
+.card-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 10pt;
+  color: #777a7c;
+}
+
+.card-img-top {
+  max-height: 130px;
+}
+
+/*media query*/
+@media (max-width: 1200px) {
+  .card-img-top {
+    max-height: 110px;
+  }
+}
+@media (max-width: 768px) {
+  .card-img-top {
+    max-height: 126.8px;
+  }
+}
+.navbar {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .logo {
@@ -103,8 +139,8 @@ img {
   font-weight: 500;
   font-size: 0.5rem;
   position: relative;
-  right: 13px;
-  bottom: 15px;
+  right: 5px;
+  bottom: 20px;
 }
 
 .icon-color {
@@ -125,8 +161,71 @@ img {
   width: 100%;
 }
 
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+.profile__user {
+  display: flex;
+  align-items: center;
+}
+.profile__img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.profile__buttons a:first-child {
+  margin-right: 0.6rem;
+}
+.profile h2 {
+  color: #001514;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.profile p {
+  color: #777a7c;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+
+#name-follows {
+  padding-left: 1.5rem;
+}
+#name-follows p {
+  padding-left: 0.2rem;
+}
+
+@media screen and (max-width: 550px) {
+  .profile {
+    justify-content: center;
+  }
+  .profile__buttons {
+    display: none;
+  }
+}
 main .card {
   border: 0;
+}
+
+.videospop {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18pt !important;
+  color: #001514;
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
+  margin-left: 7rem;
+}
+
+@media (max-width: 550px) {
+  .videospop {
+    margin-left: 0px;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

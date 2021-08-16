@@ -1,0 +1,30 @@
+.card-title {
+    font-family: $montserrat;
+    font-weight: $bold;
+    font-size: 12pt;
+    color: $black;
+}
+
+.card-text {
+    font-family: $open-Sans;
+    font-weight: $regular;
+    font-size: 10pt;
+    color: $gray; 
+}
+
+.card-img-top {
+    max-height: 130px;
+}
+
+/*media query*/
+@media (max-width:1200px){
+    .card-img-top {
+        max-height: 110px;
+    }
+}
+
+@media (max-width:768px) {
+    .card-img-top {
+        max-height: 126.8px;
+    }
+}
